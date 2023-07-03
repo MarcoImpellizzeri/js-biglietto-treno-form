@@ -15,6 +15,39 @@
 </head>
 
 <body>
+    <div class="text-uppercase text-center text-light fw-bold my-bg-secondary p-3 m-0">
+        <h1>Treni nel mondo</h1>
+        <p>scopri quanto ti potrebbe costare un giro su un nostro treno</p>
+    </div>
+
+    <div class="row justify-content-center py-5 my-bg-primary">
+        <div class="col-6 p-3 rounded my-bg-tertiary">
+            <form>
+                <div class="mb-3 text-light">
+                    <label for="user-name" class="form-label">Nome utente</label>
+                    <input type="text" class="form-control" id="user-name">
+                </div>
+
+                <div class="mb-3 text-light">
+                    <label for="user-Km" class="form-label">Chilometri da percorrere</label>
+                    <input type="text" class="form-control" id="user-Km">
+                </div>
+
+                <div class="mb-3 text-light">
+                    <label for="user-age" class="form-label">Quanti anni hai?</label>
+                    <input type="text" class="form-control" id="user-age">
+                </div>
+            </form>
+
+            <div class="text-center">
+                <button id="generate-tiket" class="btn my-btn-bg text-light">Genera</button>
+                <button class="btn my-btn-bg text-light">Annulla</button>
+            </div>
+
+            <div id="tot-price"></div>
+        </div>
+    </div>
+
 
 
 

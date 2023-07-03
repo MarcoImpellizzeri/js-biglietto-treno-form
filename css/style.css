@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-bg-primary {
+    background-color: #EDC7B7;
+}
+
+.my-bg-secondary {
+    background-color: #BAB2B5;
+}
+
+.my-bg-tertiary {
+    background-color: #AC3B61;
+}
+
+.my-btn-bg {
+    background-color: #123D6A;
+}
+
+.btn:first-child:active {
+    background-color: #123D6A;
+}
+
+:not(.btn-check)+.btn:active {
+    background-color: #123D6A;
+}
+
+.btn:hover {
+    background-color: #123D6A;
+}
