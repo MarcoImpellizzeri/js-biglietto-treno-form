@@ -1,31 +1,25 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.my-bg-primary {
-    background-color: #EDC7B7;
+    background-color: #5B5561;
 }
 
 .my-bg-secondary {
-    background-color: #BAB2B5;
+    background-color: #46344E;
 }
 
 .my-bg-tertiary {
-    background-color: #AC3B61;
+    background-color: #9A786F;
 }
 
-.my-btn-bg {
-    background-color: #123D6A;
+.my-btn-bg, 
+.btn:first-child:active, 
+:not(.btn-check)+.btn:active, 
+.btn:hover  {
+    background-color: #5B5561;
 }
 
-.btn:first-child:active {
-    background-color: #123D6A;
-}
-
-:not(.btn-check)+.btn:active {
-    background-color: #123D6A;
-}
-
-.btn:hover {
-    background-color: #123D6A;
+.table {
+    border: none;
+    --bs-table-bg: #9A786F;
+    --bs-table-color: white;
 }
