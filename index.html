@@ -15,67 +15,68 @@
 </head>
 
 <body>
-    <div class="text-uppercase text-center text-light fw-bold my-bg-secondary p-3 m-0">
-        <h1>Treni nel mondo</h1>
-        <p>scopri quanto ti potrebbe costare un giro su un nostro treno</p>
-    </div>
-
-    <div class="row justify-content-center py-5">
-        <div class="col-6 p-3 rounded my-bg-tertiary">
-            <form>
-                <div class="mb-3 text-light">
-                    <label for="user-name" class="form-label">Nome utente</label>
-                    <input type="text" class="form-control" id="user-name">
-                </div>
-
-                <div class="mb-3 text-light">
-                    <label for="user-Km" class="form-label">Chilometri da percorrere</label>
-                    <input type="text" class="form-control" id="user-Km">
-                </div>
-
-                <div class="mb-3 text-light">
-                    <label for="user-age" class="form-label">Quanti anni hai?</label>
-                    <input type="text" class="form-control" id="user-age">
-                </div>
-            </form>
-
-            <div class="text-center">
-                <button id="generate-tiket" class="btn my-btn-bg text-light">Genera</button>
-                <button class="btn my-btn-bg text-light">Annulla</button>
-            </div>
-        </div>
-
-        <div class="my-bg-primary p-3">
-            <h2 class="text-uppercase text-center text-light fw-bold p-3 m-0">il tuo biglietto</h2>
-
-            <div class="row justify-content-center py-5">
-                <div class="col-8 rounded my-bg-tertiary pt-3">
-                    <table class="table text-center my-bg-secondary">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nome passeggero</th>
-                                <th scope="col">Offerta</th>
-                                <th scope="col">Carrozza</th>
-                                <th scope="col">Codice Cp</th>
-                                <th scope="col">Costo boglietto</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="user-name"></td>
-                                <td id="offer"></td>
-                                <td id="vagon"></td>
-                                <td id="code-cp"></td>
-                                <td><span id="tot-price"></span> €</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div class="container-fluid p-0">
+        <div class="text-uppercase text-center text-light fw-bold my-bg-secondary p-3 m-0">
+            <h1>Treni nel mondo</h1>
+            <p>scopri quanto ti potrebbe costare un giro su un nostro treno</p>
         </div>
     </div>
 
+    <div class="container">
+        <div class="row justify-content-center py-5">
+            <div class="col-6 p-3 rounded my-bg-tertiary">
+                <form>
+                    <div class="mb-3 text-light">
+                        <label for="user-name" class="form-label">Nome utente</label>
+                        <input type="text" class="form-control" id="user-name">
+                    </div>
 
+                    <div class="mb-3 text-light">
+                        <label for="user-Km" class="form-label">Chilometri da percorrere</label>
+                        <input type="text" class="form-control" id="user-Km">
+                    </div>
+
+                    <div class="mb-3 text-light">
+                        <label for="user-age" class="form-label">Quanti anni hai?</label>
+                        <input type="text" class="form-control" id="user-age">
+                    </div>
+                </form>
+
+                <div class="text-center">
+                    <button id="generate-tiket" class="btn my-btn-bg text-light">Genera</button>
+                    <button class="btn my-btn-bg text-light">Annulla</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-uppercase text-center text-light fw-bold p-3 m-0">il tuo biglietto</h2>
+
+        <div class="row justify-content-center py-5">
+            <div class="col-8 rounded my-bg-tertiary pt-3">
+                <table class="table text-center my-bg-secondary">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome passeggero</th>
+                            <th scope="col">Offerta</th>
+                            <th scope="col">Carrozza</th>
+                            <th scope="col">Codice Cp</th>
+                            <th scope="col">Costo boglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="user-name"></td>
+                            <td id="offer"></td>
+                            <td id="vagon"></td>
+                            <td id="code-cp"></td>
+                            <td><span id="tot-price">0.00</span> €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/main.js"></script>
